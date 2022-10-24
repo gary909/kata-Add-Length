@@ -1,5 +1,10 @@
 function addLength(str) {
-    //start-here
+    const myArray = str.split(" ");
+    let newArr = [];
+    for (let i = 0; i < myArray.length; i++) {
+        newArr.push(myArray[i] + ' ' + myArray[i].length);
+    }
+    return newArr;
 }
 
 console.log(addLength('apple ban')); // ["apple 5", "ban 3"]
